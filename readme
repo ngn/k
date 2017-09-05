@@ -1,1 +1,20 @@
-continued offline
+               k                          apl
+syntax         statically parsable        ambiguous until runtime
+dimensions     0(atom) and 1(list)        0(scal),1(vec),2(mat),etc
+1st-class fns  yes(parens nominalise)     through ⎕or (can't form arrays)
+lexical scope  no(only local and global)  yes(nested dfns) and no(tradfns)
+closures       no(only through currying)  yes(e.g. user-defined operators)
+object graph   acyclic                    namespaces can form cycles
+gc             instant                    requires mark-and-sweep
+simple types   int64,fp,chr8,symbol,time  int53,fp,cmplx,chr32,bool1
+assoc arrays   dict(immutable semantics)  namespaces(restr keys, mutable)
+enclsd sclrs   no (,x forms a 1-el list)  yes (⊂x forms a proper scalar)
+each lft/rgt   \: and /:                  through enclosed scalars
+repl           stdin/stdout with rlwrap   curses tui; gui best on windows
+implicit each  most arith (except x!y)    all arith
+primitives     few, heavily overloaded    many, some unused (e.g. =⍵ ⌊'A')
+charset        ascii(easy to set up)      apl(visually pleasing)
+reduce,scan    left-to-right              right-to-left, O(n^2) for user fn
+user-defined   arr,fn(only as nouns)      arr,fn(not primitive),mon/dyad op
+fn trains      projection, composition    forks, atops
+stranding      unitype only               any sequence of arrays
