@@ -9,7 +9,7 @@ gc             instant                    requires mark-and-sweep
 simple types   int64,fp,chr8,symbol,time  int53,fp,cmplx,chr32,bool1
 assoc arrays   dict(immutable semantics)  namespaces(restr keys, mutable)
 enclsd sclrs   no (,x forms a 1-el list)  yes (⊂x forms a proper scalar)
-each lft/rgt   \: and /:                  through enclosed scalars
+each lft/rgt   \: and /:                  through enclosed scalars or ⍤
 repl           stdin/stdout with rlwrap   curses tui; gui best on windows
 implicit each  most arith (except x!y)    all arith
 primitives     few, heavily overloaded    many, some unused (e.g. =⍵ ⌊'A')
