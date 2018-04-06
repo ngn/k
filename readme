@@ -1,6 +1,2 @@
-ngn/k is an implementation from scratch of a subset of Arthur Whitney's k language, http://kparc.com/k.txt
-Information about the original is scarce, so my take on k can be expected to be incompatible, incomplete, and outdated.
-I don't make the source code and the binary publicly available at this time but you can have a quick test or
-use it for codegolfing purposes at
-
-https://tio.run/#k-ngn
+ngn/k is an implementation from scratch of a subset of k (http://kparc.com/k.txt)
+For a quick test or for codegolfing purposes, try it at https://tio.run/#k-ngn
